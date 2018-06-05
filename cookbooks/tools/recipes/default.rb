@@ -8,6 +8,7 @@ include_recipe 'tools::docker'
 include_recipe 'tools::system'
 include_recipe 'tools::development'
 include_recipe 'tools::golang'
+include_recipe 'tools::virtualization'
 
 systools = %w{ vim git-core build-essential openvpn curl }
 systools.each do |pkg|

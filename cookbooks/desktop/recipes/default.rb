@@ -1,7 +1,7 @@
 
 include_recipe 'desktop::i3wm'
 
-packages = %w{keepassx spotify-client evince}
+packages = %w{keepassx spotify-client evince arandr}
 apt_repository 'spotify' do
     uri "http://repository.spotify.com"
     keyserver 'keyserver.ubuntu.com'

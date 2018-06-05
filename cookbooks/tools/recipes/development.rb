@@ -1,5 +1,5 @@
 
-packages = %w{cmake make python-dev python-virtualenv python-pip}
+packages = %w{cmake make python-dev python-virtualenv python-pip jq emacs}
 
 packages.each do |pkg|
 	apt_package pkg do
