@@ -1,5 +1,6 @@
 
 include_recipe 'desktop::i3wm'
+include_recipe 'desktop::tools'
 
 packages = %w{keepassx spotify-client evince arandr}
 apt_repository 'spotify' do
