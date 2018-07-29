@@ -1,16 +1,10 @@
 
 include_recipe 'desktop::i3wm'
 include_recipe 'desktop::tools'
+include_recipe 'desktop::spotify'
+include_recipe 'desktop::sound'
 
-packages = %w{keepassx spotify-client evince arandr}
-apt_repository 'spotify' do
-    uri "http://repository.spotify.com"
-    keyserver 'keyserver.ubuntu.com'
-    key '0DF731E45CE24F27EEEB1450EFDC8610341D9410'
-    action :add
-    distribution ''
-    components ['stable', 'non-free']
-end
+packages = %w{keepassx evince arandr gnupg telegram-desktop vlc dbus-x11}
 
 packages.each do |pkg|
 	apt_package pkg do
