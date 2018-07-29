@@ -11,7 +11,7 @@ include_recipe 'tools::golang'
 include_recipe 'tools::virtualization'
 include_recipe 'tools::ldap'
 
-systools = %w{ vim git-core build-essential openvpn curl irssi}
+systools = %w{ vim git build-essential openvpn curl irssi}
 systools.each do |pkg|
     apt_package pkg do
 	action :install
