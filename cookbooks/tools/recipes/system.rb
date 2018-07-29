@@ -1,5 +1,7 @@
 
-system_tools = %w{ htop tcpdump tmux autojump acpi silversearcher-ag sysstat}
+system_tools = %w{ htop tcpdump tmux autojump
+		acpi silversearcher-ag sysstat
+		minicom }
 
 system_tools.each do |pkg|
 	apt_package pkg do
