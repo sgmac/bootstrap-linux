@@ -1,5 +1,5 @@
 
-packages = %w{cmake make python-dev python-virtualenv python-pip jq gitk}
+packages = %w{cmake make python-dev python-virtualenv python-pip jq gitk graphviz}
 
 packages.each do |pkg|
 	apt_package pkg do
